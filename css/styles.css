@@ -1,3 +1,5 @@
+/* general */
+
 *{
   padding: 0;
   margin: 0;
@@ -7,7 +9,7 @@
 }
 
 body{
-  background: url(/resources/images/wallpaper.jpg);
+  background-image: url(/resources/images/wallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #04688b;
@@ -19,25 +21,36 @@ a{
   color: #3366CC
 }
 
+/* container */
+
 .container{
   font-family: 'Work Sans', sans-serif;
   font-style: normal;
   color: #1c3455;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .content{
-  margin: 20px 20px;
+  margin: 20px;
   padding: 15px;
 }
+
+.content_banner{
+  display: inline-block;
+  background-color: #e8bc28;
+  color: #204794;
+
+}
+
+/* introduction */
 
 .introduction{
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
@@ -89,6 +102,70 @@ a{
   cursor: pointer;
 }
 
+/* pages */
+
+.page{
+  display: none;
+  padding: 20px;
+}
+
+.page_title{
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: #1d9abb;
+  color: #1c3455;
+  border-radius: 5px;
+}
+
+.page_subtitle{
+  padding: 10px;
+  color: rgb(73, 73, 73);
+}
+
+.page_content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page_information{
+  color: #1a3153;
+  padding: 10px;
+  font-size: 20px;
+  text-justify: auto;
+}
+
+.page_information span {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+/* pagination */
+
+.pagination{
+  /* display: flex; <- this attribute will be activate with js*/
+  display: none;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.btn{
+  width: 340px;
+  height: 50px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 5px;
+  background: #2a4e6b;
+  cursor: pointer;
+}
+
+/* footer */
+
 .footer{
   display: flex;
   justify-content: space-between;
@@ -98,11 +175,15 @@ a{
   width: 300px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 580px){
   .introduction{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .page_content{
+    flex-direction: row;
   }
 }
