@@ -6,17 +6,21 @@
     <title>Interactive Training Content</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" type="text/css">
-    <link href="/resources/images/logo.ico" rel="icon">
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="./resources/images/logo.ico" rel="icon">
+    <link href="./css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cf4505ac4c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
+  <div class="header">
+    <h1 class="header">Lorem ipsum dolor sit amet</h1>
+    <span class="header">module {{ number }}</span>
+  </div>
     <div class="content">
       <div class="page_0" id="page_0">
         <div class="introduction" id="introduction">
           <div class="introduction_image">
-            <img src="/resources/images/introduction_image.png" alt="intro image" class="introduction_image--img">
+            <img src="./resources/images/introduction_image.png" alt="intro image" class="introduction_image--img">
           </div>
           <div class="introduction_container">
             <div class="introduction_box">
@@ -33,31 +37,152 @@
       </div>
       <div class="page" id="page_1">
         <div class="page_box">
-          <h2 class="page_title">Welcome first module!</h2>
+          <h2 class="page_title">First page!</h2>
           <h3 class="page_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores perspiciatis libero, consectetur dicta alias, autem facilis officiis beatae totam accusamus vitae nulla.</h3>
           <div class="page_content">
             <div class="page_information">
               <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ipsum natus iure nulla voluptatem cumque veritatis cum omnis. Adipisci molestiae numquam, molestias deleniti eum impedit voluptatum dicta suscipit quidem aut?</span>
               <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur. Ipsa, maiores? Cum, rerum sint eos accusamus ipsum asperiores inventore! Eligendi dicta deserunt reprehenderit autem, fugiat nisi voluptas quo laborum.</span>
+              <a href="#" class="external_link">more information here!</a>
             </div>
             <div class="page_img">
-              <img src="/resources/images/introduction_image.png" alt="intro image" class="introduction_image--img">
+              <img src="./resources/images/introduction_image.png" alt="intro image" class="introduction_image--img">
             </div>
           </div>
         </div>
       </div>
-      <div class="pagination">
-        <button type="button" class="btn" id="back">back</button>
-        <button type="button" class="btn" id="next">next</button>
-    </div>
+      <div class="page" id="page_2">
+        <div class="page_box">
+          <h2 class="page_title">Second page!</h2>
+          <h3 class="page_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores perspiciatis libero, consectetur dicta alias, autem facilis officiis beatae totam accusamus vitae nulla.</h3>
+          <div class="page_content flex-row-reverse">
+            <div class="page_information">
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ipsum natus iure nulla voluptatem cumque veritatis cum omnis. Adipisci molestiae numquam, molestias deleniti eum impedit voluptatum dicta suscipit quidem aut?</span>
+              <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur. Ipsa, maiores? Cum, rerum sint eos accusamus ipsum asperiores inventore! Eligendi dicta deserunt reprehenderit autem, fugiat nisi voluptas quo laborum.</span>
+              <a href="#" class="external_link">more information here!</a>
+            </div>
+            <div class="page_img">
+              <img src="./resources/images/introduction_image.png" alt="intro image" class="introduction_image--img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page_3">
+        <div class="page_box">
+          <h2 class="page_title">Second page!</h2>
+          <h3 class="page_subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores perspiciatis libero, consectetur dicta alias, autem facilis officiis beatae totam accusamus vitae nulla.</h3>
+          <div class="page_content flex-column">
+            <div class="page_information">
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ipsum natus iure nulla voluptatem cumque veritatis cum omnis. Adipisci molestiae numquam, molestias deleniti eum impedit voluptatum dicta suscipit quidem aut?</span>
+              <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur. Ipsa, maiores? Cum, rerum sint eos accusamus ipsum asperiores inventore! Eligendi dicta deserunt reprehenderit autem, fugiat nisi voluptas quo laborum.</span>
+            </div>
+            <div class="page_video">
+              <video src="./resources/videos/video.mp4" alt="video content" class="page_video--video">
+            </div>
+            <a href="#" class="external_link">more information here!</a>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="page_4">
+        <div>
+            <h2 class="table_title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        </div>
+        <div class="table-container">
+            <table class="table" id="tabla">
+                <colgroup>
+                    <col class="s-group">
+                    <col class="s-resource-name">
+                    <col class="s-link">
+                </colgroup>
+                <thead class="thead">
+                    <tr>
+                        <th class="table__head">Group</th>
+                        <th class="table__head">Resource name</th>
+                        <th class="table__head">Link</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr>
+                        <td class="table__data" ROWSPAN="7">Group</td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table__data" ROWSPAN="8">Group</td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table__data">Item</td>
+                        <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table__data">Item</td>
+                        <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                        <td class="table__data">Item</td>
+                        <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                    <tr>
+                      <td class="table__data">Item</td>
+                      <td class="table__data"><a href="#" target="_blank">Click here</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+      <div class="page" id="page_5">
+        <div class="congrats">
+          <h2>Congrats!</h2>
+          <img src="./resources/images/congrats.png" alt="congrats" class="page_image--image">
+          <span>You've got successfully completed the module</span>
+        </div>
+      </div>
+        <div class="pagination">
+          <button type="button" class="btn" id="back">back</button>
+          <button type="button" class="btn" id="next">next</button>
+      </div>
     </div>
     <div class="footer">
       <div class="footer_content"></div>
       <div class="footer_logo">
-        <img src="/resources/images/logo.svg" alt="Logo Interactive Training Content" class="footer_logo--img">
+        <img src="./resources/images/logo.svg" alt="Logo Interactive Training Content" class="footer_logo--img">
       </div>
     </div>
-    <script src="/js/main.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
 </div>
 </body>
 </html>

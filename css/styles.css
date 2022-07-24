@@ -12,7 +12,6 @@ body{
   background-image: url(/resources/images/wallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #04688b;
 }
 
 a{
@@ -35,14 +34,23 @@ a{
 
 .content{
   margin: 20px;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .content_banner{
   display: inline-block;
   background-color: #e8bc28;
   color: #204794;
+}
 
+/* banner */
+
+.header{
+  position: sticky;
+  padding: 10px;
+  background-color: #e8bc28;
+  color: #3366CC;
+  top: 0;
 }
 
 /* introduction */
@@ -141,6 +149,84 @@ a{
   padding: 10px 0;
 }
 
+.page_image--image{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.page_video--video{
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.congrats{
+  text-align: center;
+}
+
+.congrats > h2{
+  display: inline-block;
+  color: white;
+  background: #3366CC;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.congrats > span{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* table */
+
+.table_title {
+  color: white;
+  background: #3366CC;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  padding: 0 20px;
+}
+
+.table {
+  border-collapse: collapse;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.table__head {
+  color: black;
+  border: 1px solid #f9f9f9;
+  border-radius: inherit;
+}
+
+th[class$='table__head']{
+  padding: 15px;
+  text-align: left;
+  color: #212529;
+  border: 0 solid #000000;
+  border-bottom-width: 1px;
+}
+
+td[class^="table__data"]{
+  padding: 10px;
+  border: 0 solid #dee2e6;
+  border-radius: inherit;
+  text-align: left;
+  color: #212529;
+  border-bottom-width: 1px;
+}
+
+.table .tbody tr:hover{
+  background-color: #f6f0ce;
+}
+
 /* pagination */
 
 .pagination{
@@ -185,5 +271,13 @@ a{
 
   .page_content{
     flex-direction: row;
+  }
+
+  .flex-row-reverse{
+    flex-direction: row-reverse;
+  }
+
+  .flex-column{
+    flex-direction: column;
   }
 }
