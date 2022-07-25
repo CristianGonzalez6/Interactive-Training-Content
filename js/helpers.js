@@ -10,6 +10,8 @@ const pagination = (page_visible, page_hidden, btn = true) => {
       'url(/resources/images/wallpaper.jpg)';
     buttons.style.display = 'none';
   }
+
+  window.scrollTo(0, 0);
 };
 
 export { pagination };

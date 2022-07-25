@@ -50,6 +50,7 @@ a{
   padding: 10px;
   background-color: #e8bc28;
   color: #3366CC;
+  z-index: 999;
   top: 0;
 }
 
